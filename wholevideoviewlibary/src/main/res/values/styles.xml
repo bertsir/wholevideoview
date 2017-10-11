@@ -1,0 +1,10 @@
+<resources>
+
+
+    <declare-styleable name="VideoViewProgress">
+        <attr name="vvp_background_color" format="color" />
+        <attr name="vvp_progress_color" format="color" />
+        <attr name="vvp_rect" format="boolean" />
+    </declare-styleable>
+
+</resources>

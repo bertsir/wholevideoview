@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    >
+
+    <cn.bertsir.wholevideoviewlibary.MyVideoView
+        android:id="@+id/vv_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:id="@+id/v_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_full_screen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/back_with_bg"
+        android:layout_margin="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_video_full_control"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_progress_bg"
+        >
+        <Button
+            android:id="@+id/bt_video_full"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/video_bottom_play"
+            />
+
+        <TextView
+            android:id="@+id/tv_video_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            />
+
+        <cn.bertsir.wholevideoviewlibary.VideoViewProgress
+            android:id="@+id/vp_video_full"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            app:vvp_background_color="#AB000000"
+            app:vvp_rect="false"
+            app:vvp_progress_color="#3ccd88"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_video_all"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>
